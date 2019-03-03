@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    background: #fff
+}
+h1{
+    font-family: monospace;
+}
+#container{
+    margin: auto;
+    width: 90%;
+    
+    background: #f3f3f3;
+    text-align: center;
+    
+}
+#form-container{
+    background:#35424a;
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border:2px solid black;
+    border-radius: 15px;
+}
+#todo{
+    border-radius:10px;
+    width: 80%;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+    
+}
+button{
+    background:#e8491d;
+    margin-top: 15px;
+    color:#fff;
+    width: 20%;
+    height: 30%;
+    border: 0;
+    font-size: 20px;
+    padding: 5px;
+
+}
+#todolist ul li {
+    border:2px solid #b5c5dd;
+    list-style: none;
+    width: 80%;
+    opacity: 1;
+    transition: all 0.7s ease-out;
+    height: 40px;
+    margin: 5px auto;
+    text-align: left
+}
+
+#todolist ul li label{
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 40px;
+    font-size: 24px;
+
+}
+#todolist ul li #check{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    float: left;
+    border:2px solid #b5c5dd;
+    position: relative;
+    outline: 0;
+    
+}
+.visual{
+    opacity: 1 !important;
+    border-radius: 10px;
+}
+#todolist ul li #check:checked:after{
+    content: '\2714';
+    font-size: 20px;
+    position: absolute;
+    color:black;
+    left: 7px;
+}
+#todolist ul li input[type="checkbox"]:checked+label{
+    text-decoration: line-through;
+    color: rgba(0,0,0,0.3)
+}
